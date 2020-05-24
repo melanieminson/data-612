@@ -1,0 +1,10 @@
+1. For my dataset this semester, I've chosen to utilize the AllStarFull.csv file from the baseballdatabank-master.
+2. The following will summarize the steps I took when reviewing the data:
+  * I displayed the first 5 rows of the dataset with df.head()
+  * I displayed the last 5 rows of the dataset with df.tail()
+  * I displayed the first 3 rows of the dataset with df.head(3)
+  * I displayed the last 8 rows of the dataset with df.tail(8)
+  * I printed the column names with df.columns
+  * I displayed the data type with type(df)
+  * I displayed the number of rows and columns with df.shape
+  * I used groupby to group the dataset on gameNum by yearID and to display the mean with groupby('yearID')['gameNum'].mean()
