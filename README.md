@@ -1,5 +1,24 @@
 # data-612
 
+Assignment 4 README
+
+For this assignment, I merged the AllstarFull.csv and AwardsPlayers.csv files. 
+
+1. I used the concat function to inner join these two files. 
+2. I counted the number of null values in each row.
+3. I noticed that there were more than a thousand null values in the startingPos, tie, and notes columns. I then dropped these columns since, if I were to use this data for analysis, I would likely not use those columns.
+4. I then recounted the number of null values in each of the remaining rows. With over 5000 rows remaining and only around 50 rows with null values, I decided to drop these rows as the data would still hold its integrity.
+5. At this point, no more null values remained.
+
+
+Assignment 3 README
+
+I imported the AwardsPlayers.csv file for this assignment.
+
+1. I created a distplot to view the density for the yearID variable. It displayed a desity count of awards for each year.
+2. I created a countplot to view the number of awards won per league. 
+3. Finally, I created a violinplot to compare each league's awards over time. It was not a very nice-looking plot. I imagine I would have to know more about how to manipulate the sizes for these plots to be able to disply the data in a friendlier format. 
+
 Assignment 2 README
 
 First, I imported the HomeGames.csv file instead of the AllstarFull.csv file as I did in my first assignment because it had dates instead of years for date data.
