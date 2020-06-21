@@ -1,5 +1,13 @@
 # data-612
 
+Assignment 5 README
+
+For this assignment, I used the HallofFame.csv file.
+
+1. I imported the dataset and checked the original "dtypes". This showed me the current types of all variables in the dataset.
+2. I converted the veriable "category" to a categorial variable, since it was previously a string variable (object).
+3. I converted the variable "yearID" to a string variable, since it was previously an integer.
+
 Assignment 4 README
 
 For this assignment, I merged the AllstarFull.csv and AwardsPlayers.csv files. 
