@@ -9,7 +9,7 @@ I had quite a bit of trouble grasping the concepts in this week's assignment. I 
 3. I searched for and returned values from the 'park.alias' column up to the first semicolon and created a new column named 'park.alias_cleaned' that included this new information using regular expressions.
 4. I imported the Salary.csv file and checked the variable types.
 5. I created an equation that would return mean, sum, median, mode, and range for column 5 (Salary) from the Salary.csv dataset.
-6. I attempted to apply the created equation to the Salaries df, to no avail.
+6. I attempted to apply the created equation to the Salaries dataset just like an example in the Lecture 6.2 notes, but was unable to achieve success in application.
 
 Assignment 5 README
 
