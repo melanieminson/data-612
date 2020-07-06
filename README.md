@@ -1,5 +1,16 @@
 # data-612
 
+Assignment 7 README
+
+1. For df_gross, if the df.type is type_x & the df.category is either 'category_x',  'category_xy',  'category_xyz’, then the program will first group by the group_col and then by the date_col. Then it will unstack the date_col and fill missing values for the ‘amount’ with zero. Then the dataframe is resampled by month (columns) in the resample step. The sum of the resampled dataframe is then returned.
+For df_recovered, if the df.type is type_x & the df.category is either 'category_01', 'category_05', 'category_07', then the program will first group by the group_col and then by the date_col. Then it will unstack the date_col and fill missing values for the ‘amount’ with zero. Then the dataframe is resampled by month (columns) in the resample step. The sum of the resampled dataframe is then returned.
+For the get_data_table formula, the return value is df_gross.add(df_recovered * -1, fill_value=0). This means that the return value will be df_gross added to the negative of the corresponding value in df_recovered and missing values will be filled with zero.
+
+2. It was difficult for me to alter this function to the dataframe I'm analyzing (the competition dataframe) because I struggle with the concept of creating a function. At first, I imported my dataframe. I located a date column (construction_year) and another column I wanted to group by (payment_type) as well as a datatype to specify (int).
+I updated the function to not include specific categories. I changed the resample to look at yearly data, not monthly data. I left the fillna and fill_value values as 9999. This will make entries with insufficient data easy to identify and extract, but other entries in this column were already entered as zero, making it easy to identify the rows with insufficient data as they will all have 9999 as their missing or invalid dates. I converted all "0" entries for this column as to be able to convert the datatype from int to datetime (year only). I was unable to successfully complete converting the construction_date to a datetime consistent with year only. This is because the "0" value data is missing timestamp data. I then instead dropped the "0" row values, as there are only 99 "0" nearly rows out of 60,000 total rows, making the lost data inconsequential.
+Whenever I ran this function, it did not end up returning any values. I actually ended up changing my chosen variables for the function to try to make it work for my dataset, but was unsuccessful, though I had previously encountered syntax errors throughout my alterations of the funtion and now no errors are returned. I'm confident that the syntax is correct, but I believe there are no values that satisfy the function within my dataframe.
+After I dropped the construction_year "0" rows and successfully converted the construction_year into a %Y datetime type, the function still did not return any values.
+
 Assignment 6 README
 
 I had quite a bit of trouble grasping the concepts in this week's assignment. I used the Parks.csv and Salaries.csv files for this assignment.
